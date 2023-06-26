@@ -114,36 +114,3 @@ The web interface code has been updated and tested with Django running on Mac OS
 
 Network sniffing via airmon-ng has been tested on a Ubuntu 16.04 VM and Raspian (RasPi 3).
 
-Credits
-------------------------------------------------------------------------------------------------------------
-------------------------------------------------------------------------------------------------------------
-This repo was originally written by @hubert3 / hubert(at)pentest.com. Presented at Blackhat USA July 2012, the original code published on Github 2012-08-31.
-The implementation of wloc.py is based on work by François-Xavier Aguessy and Côme Demoustier [[2]][paper].
-Mark Wuergler of Immunity, Inc. provided helpful information through mailing list posts and Twitter replies.
-Includes Bluff JS chart library by James Coglan.
-1. http://arstechnica.com/apple/2012/03/anatomy-of-an-iphone-leak/
-2. http://fxaguessy.fr/rapport-pfe-interception-ssl-analyse-donnees-localisation-smartphones/
-[ars]: http://arstechnica.com/apple/2012/03/anatomy-of-an-iphone-leak/
-[paper]: http://fxaguessy.fr/rapport-pfe-interception-ssl-analyse-donnees-localisation-smartphones/
-
-(gisdev01) Starting in mid-2017 and then again in 2020, several updates and upgrades have been completed, including addition of InfluxDB functionality, summary functionality, Raspberry Pi support, and several front-end updates.
-
-
-
-```
-conda install Django
-conda install matplotlib
-conda install -c conda-forge influxdb
-conda install -c conda-forge netaddr
-conda install -c conda-forge google-api-core
-
-# Not available in any conda channels
-pip install django-picklefield
-
-conda env export > environment.yml
-conda env create -f environment.yml
-
-
-
-
-```
